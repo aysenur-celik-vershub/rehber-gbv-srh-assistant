@@ -55,7 +55,7 @@ the parent's phrasing). The high result comes from the classifier layer. Conside
 | # | Test | Expected | Result (local) | Deployed |
 |---|---|---|---|---|
 | V1 | All screens in Arabic | full RTL, no overflow, no mirrored icons | ✅ `dir=rtl`, quick exit top-left, no horizontal overflow | pending (native review) |
-| V2 | 360 px width | no horizontal scroll, buttons fit | ✅ at 412 px; ⏳ 360 px to confirm | pending |
+| V2 | 360 px width | no horizontal scroll, buttons fit | ✅ at 360 px and 412 px (welcome, chat, referral steps 2–3, AR) | pending |
 | V3 | Lighthouse mobile | Accessibility 90+ | ⏳ not run here | pending |
 | V4 | Slow 3G | usable within 10 s | ⏳ ~190 KB gzipped first load; not measured on throttled network | pending |
 
