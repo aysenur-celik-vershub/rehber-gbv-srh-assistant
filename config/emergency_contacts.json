@@ -1,0 +1,34 @@
+[
+  {
+    "id": "112",
+    "number": "112",
+    "name_tr": "Acil Çağrı Merkezi",
+    "name_ar": "مركز الطوارئ",
+    "desc_tr": "Hayati tehlike veya acil durumda, 7/24, ücretsiz.",
+    "desc_ar": "في حالات الخطر أو الطوارئ، على مدار الساعة، مجاناً."
+  },
+  {
+    "id": "183",
+    "number": "183",
+    "name_tr": "ALO 183 Sosyal Destek Hattı",
+    "name_ar": "خط الدعم الاجتماعي 183",
+    "desc_tr": "Kadınlar, çocuklar ve şiddet durumları için destek hattı.",
+    "desc_ar": "خط دعم للنساء والأطفال وحالات العنف."
+  },
+  {
+    "id": "157",
+    "number": "157",
+    "name_tr": "YİMER 157 Yabancılar İletişim Merkezi",
+    "name_ar": "مركز اتصال الأجانب 157 (يمر)",
+    "desc_tr": "Yabancılar için çok dilli destek hattı, Arapça dahil.",
+    "desc_ar": "خط دعم متعدد اللغات للأجانب، بما في ذلك العربية."
+  },
+  {
+    "id": "kades",
+    "number": null,
+    "name_tr": "KADES uygulaması",
+    "name_ar": "تطبيق KADES",
+    "desc_tr": "Kadınlar için acil destek mobil uygulaması.",
+    "desc_ar": "تطبيق هاتف للدعم الطارئ للنساء."
+  }
+]
