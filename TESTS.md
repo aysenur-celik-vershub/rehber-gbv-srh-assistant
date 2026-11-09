@@ -48,7 +48,18 @@ the parent's phrasing). The high result comes from the classifier layer. Conside
 | G8 | Browser history | only root URL, no parameters | ✅ single route, no query params ever set | pending |
 | G9 | Tab title and favicon | neutral | ✅ title "Rehber", leaf icon | pending |
 | G10 | securityheaders.com scan | headers from 11.6 present | ✅ all five headers present on local responses (`curl -I`) | pending |
-| G11 | Break the LLM (wrong key / mock failure) + test 3 | error text + emergency card still shown | ✅ reply = error text, risk=high, showEmergency=true; low-risk message → medium + support offer | pending |
+| G11 | Break the LLM (wrong key / mock failure) + test 3 | error text + emergency card still shown | ✅ reply = error text, risk=high, showEmergency=true; low-risk message → medium + support offer. Also verified with **no LLM variables set at all**: build succeeds, app runs, same safe behaviour (`llm_config` in log) | pending |
+
+## 15.2b Keyboard navigation (brief step 13.5)
+
+Whole flow completed with Tab / Shift+Tab / Enter / Space only (Esc never pressed): welcome →
+language → start → topic button → high-risk message → "Evet" → referral step 1 → step 2 (select,
+checkboxes) → "Seçenekleri göster" → step 3. Focus moves into the referral panel on open and
+onto the step heading on each step change. ✅ local.
+
+Contrast (WCAG AA, computed): body text 14.6:1, muted text 5.5:1, white on brand 5.8:1, link
+5.4:1, warning box 5.7:1, emergency card 5.7:1, white on emergency red 6.5:1, quick-exit 15:1.
+All ≥ 4.5:1. ✅
 
 ## 15.3 Visual tests
 
@@ -56,7 +67,7 @@ the parent's phrasing). The high result comes from the classifier layer. Conside
 |---|---|---|---|---|
 | V1 | All screens in Arabic | full RTL, no overflow, no mirrored icons | ✅ `dir=rtl`, quick exit top-left, no horizontal overflow | pending (native review) |
 | V2 | 360 px width | no horizontal scroll, buttons fit | ✅ at 360 px and 412 px (welcome, chat, referral steps 2–3, AR) | pending |
-| V3 | Lighthouse mobile | Accessibility 90+ | ⏳ not run here | pending |
-| V4 | Slow 3G | usable within 10 s | ⏳ ~190 KB gzipped first load; not measured on throttled network | pending |
+| V3 | Lighthouse mobile (welcome screen, production build) | Accessibility 90+ | ✅ Accessibility 100, Performance 90, Best practices 100; 153 KiB total | pending (deployed URL) |
+| V4 | Slow 3G (CDP throttle: 400 kbps, 400 ms RTT) | usable within 10 s | ✅ load 3.9 s, language picked and Start visible at 4.0 s | pending |
 
 Screenshots from the local run are in `docs/screenshots/`.

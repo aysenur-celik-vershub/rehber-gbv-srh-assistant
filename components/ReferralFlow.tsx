@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import sampleServices from "@/data/sample-services.json";
 import EmergencyCard from "@/components/EmergencyCard";
 import ServiceCard from "@/components/ServiceCard";
@@ -42,6 +42,13 @@ export default function ReferralFlow({ lang, onClose }: Props) {
   const [prefLang, setPrefLang] = useState<Language | "">("");
 
   const services = sampleServices as SampleService[];
+  const titleRef = useRef<HTMLHeadingElement>(null);
+
+  // Move keyboard focus into the panel when it opens and on every step
+  // change, so keyboard and screen-reader users are not left behind it.
+  useEffect(() => {
+    titleRef.current?.focus();
+  }, [step]);
 
   const results = useMemo(() => {
     let list = services;
@@ -71,7 +78,7 @@ export default function ReferralFlow({ lang, onClose }: Props) {
 
         {step === 1 && (
           <div>
-            <h2 id="referral-title" className="mb-4 text-xl font-bold">
+            <h2 id="referral-title" ref={titleRef} tabIndex={-1} className="mb-4 text-xl font-bold outline-none">
               {t("consent_question", lang)}
             </h2>
             <div className="flex flex-col gap-2">
@@ -101,9 +108,10 @@ export default function ReferralFlow({ lang, onClose }: Props) {
             }}
             className="space-y-5"
           >
-            <h2 id="referral-title" className="text-xl font-bold">
-              {t("referral_note", lang)}
+            <h2 id="referral-title" ref={titleRef} tabIndex={-1} className="text-xl font-bold outline-none">
+              {t("referral_step2_title", lang)}
             </h2>
+            <p className="rounded-xl bg-brand-soft p-3 text-base">{t("referral_note", lang)}</p>
 
             <div>
               <label htmlFor="referral-city" className="mb-1 block text-base font-medium">
@@ -118,7 +126,7 @@ export default function ReferralFlow({ lang, onClose }: Props) {
                 <option value="">{t("prefer_not_say", lang)}</option>
                 {CITIES.map((c) => (
                   <option key={c} value={c}>
-                    {c}
+                    {t(`city_${c}`, lang)}
                   </option>
                 ))}
               </select>
@@ -207,8 +215,8 @@ export default function ReferralFlow({ lang, onClose }: Props) {
             >
               {t("sample_data_label", lang)}
             </p>
-            <h2 id="referral-title" className="sr-only">
-              {t("show_options", lang)}
+            <h2 id="referral-title" ref={titleRef} tabIndex={-1} className="text-xl font-bold outline-none">
+              {t("referral_step3_title", lang)}
             </h2>
 
             {results.length === 0 ? (

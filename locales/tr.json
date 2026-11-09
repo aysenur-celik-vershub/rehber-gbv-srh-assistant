@@ -62,5 +62,17 @@
   "assistant_label": "Asistan",
   "you_label": "Siz",
   "chat_region_label": "Sohbet",
-  "message_input_label": "Mesajınız"
+  "message_input_label": "Mesajınız",
+  "referral_step2_title": "Paylaşmak istediğiniz bilgileri seçin",
+  "referral_step3_title": "Hizmet seçenekleri",
+  "city_Ankara": "Ankara",
+  "city_İstanbul": "İstanbul",
+  "city_İzmir": "İzmir",
+  "city_Gaziantep": "Gaziantep",
+  "city_Hatay": "Hatay",
+  "city_Şanlıurfa": "Şanlıurfa",
+  "city_Adana": "Adana",
+  "city_Mersin": "Mersin",
+  "city_Konya": "Konya",
+  "city_Kayseri": "Kayseri"
 }

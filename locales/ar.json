@@ -62,5 +62,17 @@
   "assistant_label": "المساعدة",
   "you_label": "أنتِ",
   "chat_region_label": "المحادثة",
-  "message_input_label": "رسالتكِ"
+  "message_input_label": "رسالتكِ",
+  "referral_step2_title": "اختاري المعلومات التي تودّين مشاركتها",
+  "referral_step3_title": "خيارات الخدمات",
+  "city_Ankara": "أنقرة",
+  "city_İstanbul": "إسطنبول",
+  "city_İzmir": "إزمير",
+  "city_Gaziantep": "غازي عنتاب",
+  "city_Hatay": "هاتاي",
+  "city_Şanlıurfa": "شانلي أورفا",
+  "city_Adana": "أضنة",
+  "city_Mersin": "مرسين",
+  "city_Konya": "قونية",
+  "city_Kayseri": "قيصري"
 }

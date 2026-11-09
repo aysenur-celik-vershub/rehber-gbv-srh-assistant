@@ -14,7 +14,10 @@ const TYPE_LABEL: Record<ServiceType, TranslationKey> = {
 export default function ServiceCard({ lang, service }: Props) {
   const name = lang === "ar" ? service.name_ar : service.name_tr;
   const hours = lang === "ar" ? service.hours_ar : service.hours_tr;
-  const city = service.city === "online" ? t("service_city_online", lang) : service.city;
+  const city =
+    service.city === "online"
+      ? t("service_city_online", lang)
+      : t(`city_${service.city}` as TranslationKey, lang);
   const languages = service.languages.map((l) => t(l === "ar" ? "language_ar" : "language_tr", lang));
 
   return (

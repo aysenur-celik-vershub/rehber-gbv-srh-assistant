@@ -14,7 +14,9 @@ type Entry = {
   id: number;
   role: "user" | "assistant";
   content: string;
-  // Fixed UI text (the welcome message) is never sent to the API.
+  // Fixed UI text (the welcome message) is never sent to the API. It keeps
+  // the language it was shown in; switching language mid-chat keeps the
+  // history and only affects subsequent replies.
   local?: boolean;
   risk?: Risk;
   showEmergency?: boolean;
@@ -132,7 +134,7 @@ export default function Chat({ lang, onChangeLanguage }: Props) {
             {e.role === "assistant" && e.showEmergency && <EmergencyCard lang={lang} />}
             <MessageBubble
               role={e.role}
-              content={e.local ? t("welcome_message", lang) : e.content}
+              content={e.content}
               roleLabel={t(e.role === "user" ? "you_label" : "assistant_label", lang)}
             />
             {e.role === "assistant" && e.showSupportOffer && !e.offerDismissed && e.risk && (

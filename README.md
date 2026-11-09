@@ -87,8 +87,11 @@ is designed to switch to retrieval (RAG) as content grows. Heavier future work (
 model compression, embeddings, evaluation scripts) can live in a separate Python service
 behind the same two entry points without changing the UI.
 
-Measured first-load weight (production build, mobile): about 190 KB gzipped
-(~510 KB uncompressed) across 8 files, all served from the app itself.
+Measured first load (production build, Lighthouse mobile, welcome screen): 153 KiB
+transferred, Accessibility 100, Performance 90, Best practices 100; usable in about 4 s on an
+emulated Slow 3G connection. All assets are served from the app itself. `npm audit` reports 0
+vulnerabilities in production dependencies (one moderate advisory remains in ESLint's
+dev-only tooling, not shipped).
 
 ## Run locally
 
@@ -133,7 +136,8 @@ Checks: `npm run lint`, `npm test`, `npm run typecheck`, `npm run build`.
 
 - All vetted content files are placeholders until the approved texts arrive; replies are
   therefore limited to "no information on this topic" plus support options.
-- Arabic UI strings and keyword list are drafts awaiting native-speaker review.
+- Arabic UI strings (including Arabic province names) and the keyword list are drafts awaiting native-speaker review.
+- Switching language mid-conversation keeps the history; later replies come in the new language, and the welcome message is not repeated.
 - The keyword layer matches substrings on purpose (stems), so some false positives are
   expected (e.g. Turkish "öldürücü"); this is the intended cautious behaviour.
 - No streaming: the reply arrives in one piece after both model calls finish (up to 20 s).
