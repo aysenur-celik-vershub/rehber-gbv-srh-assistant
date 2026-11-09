@@ -45,6 +45,13 @@ describe("keywordRisk – high", () => {
     expect(keywordRisk("زَوْجِي يُهَدِّدُنِي بِالقَتْلِ الآنَ")).toBe("high");
   });
 
+  it("brief test 12: a child announcing a forced marriage next month is high", () => {
+    expect(keywordRisk("14 yaşındayım, ailem beni gelecek ay evlendirecek")).toBe("high");
+    expect(keywordRisk("Beni evlendirmek istiyorlar")).toBe("high");
+    expect(keywordRisk("سيزوجونني الشهر القادم")).toBe("high");
+    expect(keywordRisk("أهلي يريدون تزويجي")).toBe("high");
+  });
+
   it("matches Arabic written while Turkish is selected (both lists searched)", () => {
     expect(keywordRisk("مرحبا، يقتلني")).toBe("high");
   });

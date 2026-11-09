@@ -2,6 +2,7 @@
   {
     "id": "112",
     "number": "112",
+    "whatsapp": null,
     "name_tr": "Acil Çağrı Merkezi",
     "name_ar": "مركز الطوارئ",
     "desc_tr": "Hayati tehlike veya acil durumda, 7/24, ücretsiz.",
@@ -10,25 +11,28 @@
   {
     "id": "183",
     "number": "183",
-    "name_tr": "ALO 183 Sosyal Destek Hattı",
-    "name_ar": "خط الدعم الاجتماعي 183",
-    "desc_tr": "Kadınlar, çocuklar ve şiddet durumları için destek hattı.",
-    "desc_ar": "خط دعم للنساء والأطفال وحالات العنف."
+    "whatsapp": "905011830183",
+    "name_tr": "ALO 183 Şiddetle Mücadele Hattı",
+    "name_ar": "خط مكافحة العنف 183",
+    "desc_tr": "Kadınlar, çocuklar ve şiddet durumları için destek hattı. 7/24. WhatsApp: 0501 183 0 183. Türkçe, Arapça ve Kürtçe.",
+    "desc_ar": "خط دعم للنساء والأطفال وحالات العنف. على مدار الساعة. واتساب: 0501 183 0 183. بالتركية والعربية والكردية."
   },
   {
     "id": "157",
     "number": "157",
+    "whatsapp": null,
     "name_tr": "YİMER 157 Yabancılar İletişim Merkezi",
     "name_ar": "مركز اتصال الأجانب 157 (يمر)",
-    "desc_tr": "Yabancılar için çok dilli destek hattı, Arapça dahil.",
-    "desc_ar": "خط دعم متعدد اللغات للأجانب، بما في ذلك العربية."
+    "desc_tr": "Yabancılar için acil yardım ve ihbar hattı 7/24; bilgi hattı hafta içi 08.00–18.00. Arapça ve Farsça dahil.",
+    "desc_ar": "خط الطوارئ والإبلاغ للأجانب على مدار الساعة؛ خط المعلومات أيام الأسبوع 08:00–18:00. بما في ذلك العربية والفارسية."
   },
   {
     "id": "kades",
     "number": null,
+    "whatsapp": null,
     "name_tr": "KADES uygulaması",
     "name_ar": "تطبيق KADES",
-    "desc_tr": "Kadınlar için acil destek mobil uygulaması.",
-    "desc_ar": "تطبيق هاتف للدعم الطارئ للنساء."
+    "desc_tr": "Kadınlar için acil destek mobil uygulaması. Arapça ve Farsça dahil 11 dilde.",
+    "desc_ar": "تطبيق هاتف للدعم الطارئ للنساء. بإحدى عشرة لغة، بما في ذلك العربية والفارسية."
   }
 ]

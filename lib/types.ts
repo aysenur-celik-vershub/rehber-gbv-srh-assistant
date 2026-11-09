@@ -41,6 +41,8 @@ export type SampleService = {
 export type EmergencyContact = {
   id: string;
   number: string | null;
+  // International format without "+" (for a wa.me link), or null.
+  whatsapp: string | null;
   name_tr: string;
   name_ar: string;
   desc_tr: string;

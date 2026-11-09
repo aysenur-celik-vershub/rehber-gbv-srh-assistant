@@ -123,6 +123,10 @@ LLM_BASE_URL=http://127.0.0.1:8787 npm run dev   # terminal 2
 `MOCK_FAIL=1 node scripts/mock-llm.mjs` makes every model call fail, to verify that the
 emergency card still appears (test G11).
 
+To compare two candidate models on the brief's Arabic and grounding tests (15.1: 4, 5, 6,
+11, 7, 8), run the app once per model and use `scripts/compare-models.mjs run` / `merge`
+(usage at the top of the script); it prints a side-by-side Markdown table.
+
 Checks: `npm run lint`, `npm test`, `npm run typecheck`, `npm run build`.
 
 ## Adapting to a new language or country
@@ -139,7 +143,8 @@ Checks: `npm run lint`, `npm test`, `npm run typecheck`, `npm run build`.
 - Arabic UI strings (including Arabic province names) and the keyword list are drafts awaiting native-speaker review.
 - Switching language mid-conversation keeps the history; later replies come in the new language, and the welcome message is not repeated.
 - The keyword layer matches substrings on purpose (stems), so some false positives are
-  expected (e.g. Turkish "öldürücü"); this is the intended cautious behaviour.
+  expected (e.g. Turkish "öldürücü", or an adult describing a forced marriage being rated
+  high); this is the intended cautious behaviour, confirmed by the project owner.
 - No streaming: the reply arrives in one piece after both model calls finish (up to 20 s).
 - Tests listed in `TESTS.md` as "pending" must still be run on the deployed URL and on
   real Android/iOS devices.

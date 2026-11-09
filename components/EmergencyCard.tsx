@@ -38,6 +38,17 @@ export default function EmergencyCard({ lang }: Props) {
               <div>
                 <div className="text-base font-semibold">{name}</div>
                 <div className="text-sm text-muted">{desc}</div>
+                {c.whatsapp && (
+                  <a
+                    href={`https://wa.me/${c.whatsapp}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 inline-flex min-h-[44px] items-center rounded-lg border border-alert/40 px-3 text-base font-semibold text-alert"
+                    aria-label={`WhatsApp ${name}`}
+                  >
+                    WhatsApp
+                  </a>
+                )}
               </div>
             </li>
           );
