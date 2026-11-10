@@ -3,7 +3,7 @@ id: gbv-basics
 title: "Cinsiyete dayalı şiddet nedir?"
 language: tr
 reviewed: true
-reviewer: "Ayşenur Çelik – health and GBV"
+reviewer: "Ayşenur Çelik (health and GBV), Eda Savran (GBV and legal)"
 last_updated: 2026-11-10
 ---
 

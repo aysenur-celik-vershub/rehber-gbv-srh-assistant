@@ -33,17 +33,16 @@ consent-based referral to support services.
 (`data/sample-services.json`; names start with "Örnek"/"تجريبي" and phone numbers are
 deliberately invalid).
 
-Content marked `reviewed: false` is placeholder or pending expert review. Current state
-of the 14 content files under `content/` (7 Turkish, 7 Arabic):
+Content marked `reviewed: false` is pending expert review. State of the 14 content files
+under `content/` (7 topics × 2 languages), as of 10 Nov 2026:
 
-| id | Turkish | Arabic |
-|---|---|---|
-| gbv-basics | approved (`reviewed: true`, Ayşenur Çelik – health and GBV) | machine translation of the approved text, pending native-speaker review (`reviewed: false`) |
-| menstrual-hygiene | draft by the project owner, final version pending (`reviewed: false`) | machine translation of the draft, pending native-speaker review (`reviewed: false`) |
-| rights-options, where-support, srh-basics, child-marriage, safety-planning | placeholder, text pending | placeholder, text pending |
+- **Turkish (7/7): approved** — reviewed by Ayşenur Çelik (health and GBV) and Eda Savran
+  (GBV and legal), `reviewed: true`.
+- **Arabic (7/7): machine translation of the approved Turkish texts, not yet reviewed** —
+  `reviewed: false`, marked `translation:` in the frontmatter. A native-speaker review is in
+  progress; until it lands, Arabic answers are grounded in unreviewed translations.
 
-For placeholder topics the assistant states it has no information and points to support
-options. The Arabic UI strings in `locales/ar.json` are a draft pending native-speaker review.
+The Arabic UI strings in `locales/ar.json` are likewise a draft pending native-speaker review.
 
 ## Privacy and safety by design
 
@@ -144,9 +143,7 @@ Checks: `npm run lint`, `npm test`, `npm run typecheck`, `npm run build`.
 
 ## Known limitations
 
-- Five of the seven content topics are still placeholders; for those the assistant can only
-  say it has no information and point to support options. The menstrual-hygiene text is a
-  draft awaiting review.
+- All seven Arabic content files are machine translations awaiting native-speaker review.
 - Arabic UI strings (including Arabic province names) and the keyword list are drafts awaiting native-speaker review.
 - Switching language mid-conversation keeps the history; later replies come in the new language, and the welcome message is not repeated.
 - The keyword layer matches substrings on purpose (stems), so some false positives are

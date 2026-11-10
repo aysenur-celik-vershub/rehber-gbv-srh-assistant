@@ -2,36 +2,36 @@
 id: menstrual-hygiene
 title: "Regl sağlığı"
 language: tr
-reviewed: false
-reviewer: ""
+reviewed: true
+reviewer: "Ayşenur Çelik (health and GBV), Eda Savran (GBV and legal)"
 last_updated: 2026-11-10
 ---
 
-Regl (adet görme), rahmin iç tabakasının her ay kanamayla dökülmesidir. Bu doğal ve sağlıklı bir süreçtir. Regl kirli ya da utanılacak bir şey değildir.
+Regl (adet görme), rahmin iç tabakasının her ay kanamayla dökülmesidir. Doğal ve sağlıklı bir süreçtir. Regl olan biri kirli değildir. Regl sırasında da okula gidebilir, çalışabilir, yemek yapabilir ve günlük hayatınıza devam edebilirsiniz.
 
 Regl genellikle 21 ile 35 günde bir olur ve 2 ile 7 gün sürer. İlk regl çoğunlukla 9 ile 16 yaş arasında başlar. İlk yıllarda düzensiz olması normaldir.
 
-Ped, tampon ve kap kullanımı:
-- Pedi en az 4–6 saatte bir değiştirin. Kanama çoksa daha sık değiştirin.
-- Tamponu en fazla 8 saat takılı bırakın. Kanamanıza uygun en düşük emicilikte tampon seçin.
-- Menstrual kabı üreticinin belirttiği süreden uzun kullanmayın. Her boşaltmada suyla yıkayın, regl bitince kaynatarak temizleyin.
-- Bez ped kullanıyorsanız sabunlu suyla yıkayın, iyice durulayın ve mümkünse güneşte kurutun. Nemli bezi kullanmayın.
+Regl ürünleri:
+- Ped: En az 4–6 saatte bir, kanama çoksa daha sık değiştirin.
+- Tampon: En fazla 8 saat takılı kalabilir. Kanamanıza uygun en düşük emicilikte olanı seçin.
+- Menstrual kap: Üreticinin belirttiği süreden uzun kullanmayın. Her boşaltmada suyla yıkayın, regl bitince kaynatın.
+- Bez ped: Sabunlu suyla yıkayın, iyice durulayın, mümkünse güneşte kurutun. Nemli bezi kullanmayın.
 
-Temizlik:
-- Ped, tampon veya kabı değiştirmeden önce ve sonra ellerinizi yıkayın.
-- Dış genital bölgeyi her gün sade suyla yıkayın. Önden arkaya doğru temizleyin.
-- Vajinanın içini yıkamayın. Vajina kendini temizler. Parfümlü ürünler tahriş yapabilir.
-- Regl sırasında banyo yapmak, yüzmek ve hareket etmek güvenlidir.
+Bakım:
+- Ürünü değiştirmeden önce ve sonra ellerinizi yıkayın.
+- Dış genital bölgeyi sade suyla, önden arkaya doğru yıkayın.
+- Vajinanın içini yıkamanız gerekmez. Vajina kendini temizler. Parfümlü ürünler tahriş yapabilir.
+- Banyo yapmak, yüzmek ve hareket etmek güvenlidir.
 
-Ağrı için sıcak su torbası ve hafif yürüyüş rahatlatabilir. Ağrı kesici kullanmak isterseniz bir eczacıya veya doktora danışın.
+Ağrı için sıcak su torbası ve hafif yürüyüş rahatlatabilir. Ağrı kesici kullanmak isterseniz bir eczacıya ya da doktora danışın.
 
 Şu durumlarda bir sağlık kuruluşuna başvurun:
-- Birkaç saat boyunca her saat ped veya tampon dolduruyorsa
+- Birkaç saat boyunca her saat ped ya da tampon doluyorsa
 - Kanama 7 günden uzun sürüyorsa
-- Ağrı günlük yaşamınızı engelliyorsa
+- Ağrı günlük hayatınızı engelliyorsa
 - İki regl arasında kanama oluyorsa
 - Hamile olmadığınız halde 3 aydan uzun süre regl olmadıysanız
 
-Tampon kullanırken birden yüksek ateş, kusma, ishal, baş dönmesi veya güneş yanığına benzer döküntü olursa tamponu hemen çıkarın ve 112'yi arayın.
+Tampon kullanırken birden yüksek ateş, kusma, ishal, baş dönmesi ya da güneş yanığına benzer döküntü olursa tamponu hemen çıkarın ve 112'yi arayın.
 
-Regl ürünlerine ulaşmakta zorlanıyorsanız "Destek nereden alınır?" bölümüne bakabilirsiniz.
+Regl ürünlerine ya da güvenli, mahremiyeti olan bir tuvalete ulaşmakta zorlanıyorsanız "Destek nereden alınır?" bölümüne bakabilirsiniz.
