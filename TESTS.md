@@ -47,7 +47,7 @@ catches it on its own (34 unit tests pass).
 | G6 | Network during referral flow | no requests | ✅ zero requests between opening and closing the panel | pending |
 | G7 | Vercel → Logs after test messages | no message content | ⏳ local server log checked: only `llm_error <call> <kind> <status>` lines | pending |
 | G8 | Browser history | only root URL, no parameters | ✅ single route, no query params ever set | pending |
-| G9 | Tab title and favicon | neutral | ✅ title "Rehber", leaf icon | pending |
+| G9 | Tab title and favicon | neutral | ✅ title "Wellspring", neutral droplet icon | pending |
 | G10 | securityheaders.com scan | headers from 11.6 present | ✅ all five headers present on local responses (`curl -I`) | pending |
 | G11 | Break the LLM (wrong key / mock failure) + test 3 | error text + emergency card still shown | ✅ reply = error text, risk=high, showEmergency=true; low-risk message → medium + support offer. Also verified with **no LLM variables set at all**: build succeeds, app runs, same safe behaviour (`llm_config` in log) | pending |
 

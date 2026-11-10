@@ -4,7 +4,7 @@ import "./globals.css";
 // Neutral title and description only: nothing in the tab title or page
 // metadata may hint at the app's subject (shared-device safety, brief 11.4).
 export const metadata: Metadata = {
-  title: "Rehber",
+  title: "Wellspring",
   description: "Kadın sağlığı bilgi rehberi",
   robots: { index: false, follow: false },
 };

@@ -2,7 +2,7 @@
 
 Ayşenur'a iletilecek belirsizlikler. Karar verilince işaretlenip koda yansıtılacak.
 
-- [ ] **Ürün adı** kesin mi? Şimdilik "Rehber" / "دليل" (A1). Repo adı `rehber-gbv-srh-assistant`.
+- [x] **Ürün adı** (A1): 10 Kasım kararı: her iki dilde de "Wellspring". Sekme başlığı, açılış ekranı ve favicon güncellendi. Repo adı GitHub'da `wellspring-assistant` olarak değiştirilecek (eski adres otomatik yönlenir); yayın adresi nötr kalacak (ör. wellspring.vercel.app), adreste "gbv", "violence" gibi kelimeler geçmeyecek.
 - [ ] **LLM sağlayıcısı ve model** (A7): Hesaplar VersHub adına açılacak (9 Kasım). İki aday model `scripts/compare-models.mjs` ile Test 4, 5, 6, 11, 7, 8 üzerinde karşılaştırılıp seçim birlikte yapılacak. Harcama limiti: aylık 50 USD. Sağlayıcının veri saklama politikası netleşince README "Privacy" bölümüne yazılacak.
 - [ ] **Onaylı içerik metinleri** (A2, A3): `content/tr/` ve `content/ar/` altındaki 14 dosya yer tutucu. Gelince frontmatter'da `reviewed: true` ve `reviewer` doldurulacak.
 - [ ] **Arapça arayüz metinleri** (A4): Bölüm 12'deki 52 anahtar birebir kullanıldı. Brifte olmayan, eklenen 24 anahtar da Arapça kontrolüne girmeli: `language_tr`, `language_ar`, `referral_step_of`, `referral_step2_title`, `referral_step3_title`, `service_city_online`, `service_hours`, `service_languages`, `service_phone`, `service_types`, `assistant_label`, `you_label`, `chat_region_label`, `message_input_label` (son dördü yalnızca ekran okuyucular için) ve 10 il adı `city_*` (Ayşenur'un önerdiği Arapça karşılıklar kullanıldı: أنقرة, إسطنبول, إزمير, غازي عنتاب, هاتاي, شانلي أورفا, أضنة, مرسين, قونية, قيصري).

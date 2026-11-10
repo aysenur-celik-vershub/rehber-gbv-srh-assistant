@@ -1,4 +1,4 @@
-# Rehber – AI-supported GBV and SRH information and safe referral assistant
+# Wellspring – AI-supported GBV and SRH information and safe referral assistant
 
 > Early-stage prototype developed by VersHub for the UNICEF Femtech Ventures call (2026).
 
@@ -11,7 +11,7 @@ consent-based referral to support services.
 
 ## Live demo
 
-`<URL – to be added after deployment>`
+`<URL – to be added after deployment>` (the address must stay neutral, e.g. `wellspring.vercel.app`: no words such as "gbv" or "violence", because the URL is visible in browser history)
 
 ## Status: early-stage prototype
 
@@ -48,7 +48,7 @@ draft pending review by a native speaker.
 - Messages are sent to the AI provider only to generate replies; retention of that data is
   subject to the provider's policy (see "Tech stack")
 - Referral choices are processed entirely in the browser and never sent anywhere
-- Neutral title and icon for shared-device safety; the app is a single route, so quick exit
+- Neutral product name ("Wellspring"), tab title, icon and URL for shared-device safety; the app is a single route, so quick exit
   (`location.replace`) leaves no back-navigation trace; `Referrer-Policy: no-referrer`
   keeps the app address from the exit destination
 - Safe failure: if the AI fails, the keyword layer still triggers the emergency card and the
@@ -97,7 +97,7 @@ dev-only tooling, not shipped).
 
 ```bash
 git clone <repo>
-cd <repo>
+cd wellspring-assistant
 cp .env.example .env.local   # add your provider, model and key
 npm install
 npm run dev

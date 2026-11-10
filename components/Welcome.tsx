@@ -23,7 +23,7 @@ export default function Welcome({
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col justify-center px-4 py-20">
       <h1 className="mb-8 text-center text-3xl font-bold text-brand">
-        {lang ? t("app_name", lang) : "Rehber · دليل"}
+        {lang ? t("app_name", lang) : "Wellspring"}
       </h1>
 
       <LanguageSelect
