@@ -38,8 +38,9 @@ of the 14 content files under `content/` (7 Turkish, 7 Arabic):
 
 | id | Turkish | Arabic |
 |---|---|---|
-| menstrual-hygiene | draft by the project owner, pending nurse review (`reviewed: false`) | machine translation of the Turkish draft, pending native-speaker review (`reviewed: false`) |
-| gbv-basics, rights-options, where-support, srh-basics, child-marriage, safety-planning | placeholder, text pending | placeholder, text pending |
+| gbv-basics | approved (`reviewed: true`, Ayşenur Çelik – health and GBV) | machine translation of the approved text, pending native-speaker review (`reviewed: false`) |
+| menstrual-hygiene | draft by the project owner, final version pending (`reviewed: false`) | machine translation of the draft, pending native-speaker review (`reviewed: false`) |
+| rights-options, where-support, srh-basics, child-marriage, safety-planning | placeholder, text pending | placeholder, text pending |
 
 For placeholder topics the assistant states it has no information and points to support
 options. The Arabic UI strings in `locales/ar.json` are a draft pending native-speaker review.
@@ -143,7 +144,7 @@ Checks: `npm run lint`, `npm test`, `npm run typecheck`, `npm run build`.
 
 ## Known limitations
 
-- Six of the seven content topics are still placeholders; for those the assistant can only
+- Five of the seven content topics are still placeholders; for those the assistant can only
   say it has no information and point to support options. The menstrual-hygiene text is a
   draft awaiting review.
 - Arabic UI strings (including Arabic province names) and the keyword list are drafts awaiting native-speaker review.

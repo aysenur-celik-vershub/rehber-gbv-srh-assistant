@@ -1,6 +1,6 @@
 ---
 id: menstrual-hygiene
-title: "الدورة الشهرية والنظافة أثناءها"
+title: "صحة الدورة الشهرية"
 language: ar
 reviewed: false
 reviewer: ""

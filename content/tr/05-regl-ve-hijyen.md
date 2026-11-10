@@ -1,6 +1,6 @@
 ---
 id: menstrual-hygiene
-title: "Regl ve regl hijyeni"
+title: "Regl sağlığı"
 language: tr
 reviewed: false
 reviewer: ""

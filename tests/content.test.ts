@@ -12,9 +12,9 @@ describe("content loader", () => {
 
   it("builds grounding text as '## title' sections", () => {
     const text = getGroundingContent("tr");
-    expect(text).toContain("## Regl ve regl hijyeni");
+    expect(text).toContain("## Regl sağlığı");
     expect(text).toContain("Pedi en az 4–6 saatte bir değiştirin");
-    expect(getGroundingContent("ar")).toContain("## الدورة الشهرية والنظافة أثناءها");
+    expect(getGroundingContent("ar")).toContain("## صحة الدورة الشهرية");
   });
 
   it("keeps review status from the frontmatter", () => {
