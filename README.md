@@ -33,11 +33,16 @@ consent-based referral to support services.
 (`data/sample-services.json`; names start with "Örnek"/"تجريبي" and phone numbers are
 deliberately invalid).
 
-Content marked `reviewed: false` is placeholder or pending expert review. At the moment
-**all 14 content files** (7 Turkish, 7 Arabic under `content/`) are placeholders waiting
-for the vetted texts; until they are replaced the assistant states it has no information on
-the topic and points to support options. The Arabic UI strings in `locales/ar.json` are a
-draft pending review by a native speaker.
+Content marked `reviewed: false` is placeholder or pending expert review. Current state
+of the 14 content files under `content/` (7 Turkish, 7 Arabic):
+
+| id | Turkish | Arabic |
+|---|---|---|
+| menstrual-hygiene | draft by the project owner, pending nurse review (`reviewed: false`) | machine translation of the Turkish draft, pending native-speaker review (`reviewed: false`) |
+| gbv-basics, rights-options, where-support, srh-basics, child-marriage, safety-planning | placeholder, text pending | placeholder, text pending |
+
+For placeholder topics the assistant states it has no information and points to support
+options. The Arabic UI strings in `locales/ar.json` are a draft pending native-speaker review.
 
 ## Privacy and safety by design
 
@@ -138,8 +143,9 @@ Checks: `npm run lint`, `npm test`, `npm run typecheck`, `npm run build`.
 
 ## Known limitations
 
-- All vetted content files are placeholders until the approved texts arrive; replies are
-  therefore limited to "no information on this topic" plus support options.
+- Six of the seven content topics are still placeholders; for those the assistant can only
+  say it has no information and point to support options. The menstrual-hygiene text is a
+  draft awaiting review.
 - Arabic UI strings (including Arabic province names) and the keyword list are drafts awaiting native-speaker review.
 - Switching language mid-conversation keeps the history; later replies come in the new language, and the welcome message is not repeated.
 - The keyword layer matches substrings on purpose (stems), so some false positives are
