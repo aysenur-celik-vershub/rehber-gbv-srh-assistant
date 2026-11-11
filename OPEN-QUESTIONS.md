@@ -18,3 +18,4 @@ Ayşenur'a iletilecek belirsizlikler. Karar verilince işaretlenip koda yansıt�
 - [x] **Dil değiştirme sohbet sırasında**: Ayşenur'un kararı uygulandı: geçmiş korunur, sonraki yanıtlar yeni dilde gelir, karşılama mesajı yeniden gösterilmez.
 - [ ] **Sohbet başlığındaki "Dili değiştir"** tek tıkla TR↔AR geçiş yapıyor (yalnızca iki dil olduğu için). Farsça eklenirse menüye dönüştürülecek.
 - [ ] **GitHub hesabı** (A9): Kod şimdilik geliştiricinin hesabında; VersHub organizasyonuna transfer edilecek mi?
+- [x] **temperature parametresi** (Bölüm 8.1/8.2): `claude-sonnet-5-5` bu parametreyi reddediyor (HTTP 400). Anthropic'e artık gönderilmiyor; OpenAI-uyumlu sağlayıcılara gönderilmeye devam ediyor. Tutarlılık için sınıflandırıcı katı JSON talimatı + temkinli ayrıştırıcıya dayanıyor.

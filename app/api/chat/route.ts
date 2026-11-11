@@ -81,7 +81,7 @@ export async function POST(req: Request): Promise<NextResponse> {
 
   let reply: string;
   if (answer.status === "fulfilled" && answer.value.trim().length > 0) {
-    reply = answer.value.trim();
+    reply = stripMarkdown(answer.value);
   } else {
     if (answer.status === "rejected") logLlmFailure("answer", answer.reason);
     reply = t("error_generic", language);
@@ -107,4 +107,15 @@ function logLlmFailure(call: "classifier" | "answer", reason: unknown): void {
       ? (reason as { status?: number }).status
       : undefined;
   console.error("llm_error", call, kind, status ?? "");
+}
+
+// The UI renders replies as plain text (never HTML), so Markdown markers the
+// model may add would show up literally. Remove the common ones only.
+function stripMarkdown(text: string): string {
+  return text
+    .replace(/\*\*(.+?)\*\*/g, "$1")
+    .replace(/__(.+?)__/g, "$1")
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/^\s*[*•]\s+/gm, "- ")
+    .trim();
 }

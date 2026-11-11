@@ -94,7 +94,14 @@ async function completeAnthropic(p: CompleteParams, signal: AbortSignal): Promis
       system: p.system,
       messages: p.messages,
       max_tokens: p.maxTokens,
-      temperature: p.temperature ?? 0.3,
+      // Current Anthropic models think before answering by default and the
+      // thinking tokens count against max_tokens; "between_tools" turns that
+      // off for plain chat so the whole budget goes to the visible reply.
+      thinking: { type: "between_tools" },
+      // `temperature` is intentionally not sent: current Anthropic models
+      // reject it ("temperature is deprecated for this model", HTTP 400).
+      // The classifier's determinism comes from its strict JSON instruction
+      // and the cautious parser (lib/classifier.ts), not from sampling.
     },
     signal,
   );
@@ -116,7 +123,7 @@ async function completeOpenAi(p: CompleteParams, signal: AbortSignal): Promise<s
       model,
       messages: [{ role: "system", content: p.system }, ...p.messages],
       max_tokens: p.maxTokens,
-      temperature: p.temperature ?? 0.3,
+      ...(p.temperature !== undefined ? { temperature: p.temperature } : {}),
     },
     signal,
   );

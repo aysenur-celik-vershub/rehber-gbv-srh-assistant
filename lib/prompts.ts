@@ -54,8 +54,13 @@ Categories: "none", "physical_violence", "sexual_violence", "psychological_viole
 
 When unsure between two levels, choose the HIGHER one.`;
 
-export const ANSWER_PARAMS = { maxTokens: 400, temperature: 0.3 } as const;
-export const CLASSIFIER_PARAMS = { maxTokens: 60, temperature: 0 } as const;
+// Brief 8.1/8.2 asks for 400 / 60 max tokens and temperature 0.3 / 0.
+// - Turkish and Arabic tokenise at roughly 2-3x English, so a 150-word reply
+//   needs ~600-800 tokens; 400 cut replies mid-sentence in production tests.
+// - Current Anthropic models reject `temperature`; lib/llm.ts only forwards
+//   it to OpenAI-compatible providers.
+export const ANSWER_PARAMS = { maxTokens: 800, temperature: 0.3 } as const;
+export const CLASSIFIER_PARAMS = { maxTokens: 100, temperature: 0 } as const;
 
 function formatEmergencyContacts(language: Language): string {
   const contacts = emergencyContacts as EmergencyContact[];
